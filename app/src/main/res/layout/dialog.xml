@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_dialog"
+    android:padding="10dp"
+    >
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_centerHorizontal="true"
+        android:id="@+id/lottie"
+        app:lottie_url="https://assets3.lottiefiles.com/packages/lf20_cv6rdeii.json"
+        app:lottie_loop="true"
+        app:lottie_autoPlay="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+    <EditText
+        android:layout_marginHorizontal="10dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/et_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lottie"
+        android:hint="Write your name"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black" />
+
+    <Button
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginVertical="10dp"
+        android:id="@+id/btn_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_name"
+        android:layout_alignParentStart="true"
+        android:background="@drawable/button_shape"
+        android:text="Save" />
+
+    <Button
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginVertical="10dp"
+        android:id="@+id/btn_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_name"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/button_shape"
+        android:backgroundTint="@color/green"
+        android:text="Cancel"
+        android:textColor="@color/white" />
+
+
+
+
+</RelativeLayout>
